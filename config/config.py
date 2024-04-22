@@ -16,6 +16,6 @@ class Settings:
     MONGODB_SERVER:Union[str, None] = os.getenv('MONGODB_SERVER')
     SECRET_KEY:Union[str, None] = os.getenv("SECRET_KEY")
     ALGORITHM:Union[str, None] = os.getenv("ALGORITHM")
-    MONGODB_DATABASE_URL:str = f"mongodb+srv://{MONGODB_USER}:{MONGODB_PASSWORD}@{MONGODB_SERVER}/?retryWrites=true&w=majority&appName={MONGODB_NAME}"
+    MONGODB_DATABASE_URL:str = f"mongodb+srv://{MONGODB_USER}:{MONGODB_PASSWORD}@{MONGODB_SERVER}/?retryWrites=true&w=majority&appName={MONGODB_NAME}&ssl=true"
 
 settings = Settings()
