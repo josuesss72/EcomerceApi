@@ -9,6 +9,7 @@ conn = MongoClient(settings.MONGODB_DATABASE_URL)
 db = conn[f"{settings.MONGODB_DATABASE_NAME}"]
 collection_user = db["user"]
 collection_product = db["product"]
+collection_upload = db["upload"]
 
 
 def getDocuments(collection: str) -> TRequestDocumentAll:
