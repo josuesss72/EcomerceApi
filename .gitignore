@@ -1,3 +1,5 @@
 venv/
 .env
 .vim/
+client_secrets
+crendentials_module
